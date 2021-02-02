@@ -1,0 +1,126 @@
+.lessons__class {
+    padding: 16px 24px;
+    min-width: 280px;
+}
+
+.lessons__teacher-info {
+    margin-bottom: 16px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.lessons__teacher-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    margin-right: 12px;
+    object-fit: cover;
+    object-position: center center
+}
+
+.lessons__write-message {
+    width: 100%;
+}
+
+.lessons__teacher-job {
+    color: var(--grey);
+}
+
+.lessons__class hr {
+    margin: 24px -24px;
+    border-color: var(--very-light-grey);
+}
+
+.lessons__materials-title,
+.lessons__classmates-title {
+    display: flex;
+    align-items: center;
+}
+
+.lessons__materials-title {
+    margin-bottom: 16px;
+}
+
+.lessons__materials-title > svg,
+.lessons__classmates-title > svg {
+    margin-right: 8px;
+}
+
+.lessons__material-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.lessons__material-link {
+    margin-bottom: 8px;
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--primary);
+}
+
+.lessons__material-link:last-child {
+    margin-bottom: 0;
+}
+
+.lessons__classmates-title {
+    margin-bottom: 24px;
+}
+
+.lessons__classmate {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.lessons__classmate-avatar {
+    width: 48px;
+    height: 48px;
+    margin-right: 12px;
+    border-radius: 12px;
+    object-fit: cover;
+    object-position: center center;
+}
+
+.lessons__classmate-name {
+    font-weight: normal;
+}
+
+@media screen and (max-width: 1280px) {
+    .lessons__class {
+        min-width: 215px;
+        padding: 16px;
+    }
+
+    .lessons__class hr {
+        margin: 24px -16px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .lessons__class {
+        margin-top: 24px;
+        width: 100%;
+    }
+    .lessons__write-message {
+        width: 210px;
+        margin-left: auto;
+        margin-top: -64px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .lessons__write-message {
+        margin-left: 0;
+        margin-top: 0;
+        width: 100%
+    }
+
+    .lessons__teacher-info {
+        justify-content: space-between;
+    }
+
+    .lessons__teacher-name-keeper {
+        text-align: right;
+    }
+}

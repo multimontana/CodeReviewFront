@@ -1,0 +1,38 @@
+.description__page-keeper {
+    position: relative;
+    padding: 32px 0;
+}
+
+button.description__close {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    padding: 0;
+}
+
+.description__back-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 32px;
+    padding: 0;
+}
+
+.description__back-icon {
+    margin-right: 8px;
+}
+
+.description__start-keeper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.description__test-name-keeper {
+    display: flex;
+}
+
+.description__test-icon {
+    width: 64px;
+    height: 64px;
+    margin-right: 16px;
+}

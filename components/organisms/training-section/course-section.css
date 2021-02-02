@@ -1,0 +1,16 @@
+.course-sec__back-button{
+    padding: 0 !important;
+    margin-bottom: 16px;
+}
+
+.course-sec__title {
+    margin-bottom: 24px;
+}
+
+.course-sec__content{
+    background: var(--white);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+    display: flex;
+    align-items: flex-start;
+}

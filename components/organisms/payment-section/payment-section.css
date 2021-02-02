@@ -1,0 +1,18 @@
+.payment-sec__back-button {
+    padding: 0px;
+    margin-bottom: 16px;
+}
+
+.payment-sec__back-icon {
+    margin-right: 8px;
+}
+
+.payment-sec__title {
+    margin-bottom: 24px;
+}
+.payment-sec__keeper {
+    background: var(--white);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+    display: flex;
+}

@@ -1,0 +1,124 @@
+.course-sec__information {
+    padding: 24px;
+    border-right: 1px solid var(--very-light-grey);
+    max-width: 240px;
+    width: 100%;
+}
+
+.course-sec__information hr {
+    margin: 24px -24px;
+    border-color: var(--very-light-grey);
+    border-width: 1px;
+}
+
+.course-sec__information h4:not(.course-sec__profession-name),
+.course-sec__information h5 {
+    font-weight: normal;
+}
+
+.course-sec__icon-keeper {
+    margin-bottom: 24px;
+    border-radius: 16px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.course-sec__icon {
+    width: 100%;
+    height: 100%;
+    width: 128px;
+    height: 128px;
+}
+
+.course-sec__property {
+    margin-bottom: 8px;
+}
+
+.course-sec__property:last-of-type {
+    margin-bottom: 16px;
+}
+
+.course-sec__price-keeper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.course-sec__price {
+    font-weight: 600;
+}
+
+.course-sec__property>h6 {
+    color: var(--grey);
+}
+
+.course-sec__button {
+    width: 100%;
+}
+
+.course-sec__button:disabled {
+    color: var(--light-grey);
+}
+
+.course-sec__day {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 8px 8px 16px;
+    margin-bottom: 8px;
+    position: relative;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.course-sec__day:first-child {
+    margin-top: 8px;
+}
+
+.course-sec__day:before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+    opacity: 0;
+    transform: scaleY(0);
+    transform-origin: center center;
+    background: var(--light-grey);
+    z-index: 0;
+    border-radius: 8px;
+}
+
+.course-sec__day:hover:before {
+    opacity: .15;
+    transform: scaleY(1);
+}
+
+.course-sec__day.active:hover:before {
+    opacity: .45;
+}
+
+.course-sec__day.active:before {
+    opacity: .25;
+    transform: scaleY(1);
+}
+
+.course-sec__days {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.course-sec__profession-image {
+    margin: 8px 0;
+    width: 100%;
+    height: 100%
+}
+
+.course-sec__profession-name {
+    color: var(--primary);
+}

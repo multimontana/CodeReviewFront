@@ -1,0 +1,217 @@
+.lessons__back-button {
+    margin-bottom: 16px;
+    padding: 0;
+}
+
+.lessons__back-icon {
+    margin-right: 8px;
+}
+
+.lessons__title {
+    margin-bottom: 24px;
+    text-align: left!important;
+}
+
+.lessons__lesson-keeper {
+    background: var(--white);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.lessons__lesson {
+    border-left: 1px solid var(--very-light-grey);
+    border-right: 1px solid var(--very-light-grey);
+    width: 100%;
+}
+
+.lessons__list-opener {
+    display: flex;
+    align-items: center;
+    margin: 16px 0 15px 24px;
+    padding: 0;
+}
+
+.lessons__list-opener:not(.opened) > svg {
+    transform: scaleX(-1);
+}
+
+.lessons__list-opener > h4 {
+    font-weight: normal;
+    margin-left: 8px;
+    text-align: left!important;
+}
+
+.lessons__list-opener > h4 > span {
+    font-weight: 600;
+}
+
+.lessons__lesson > hr {
+    border-color: var(--very-light-grey)
+}
+
+.lessons__lesson-video {
+    margin: 24px;
+    width: calc(100% - 48px);
+    height: 340px;
+}
+
+.lessons__comments {
+    margin: 0 24px 24px;
+}
+
+.lessons__comments-title {
+    margin-bottom: 16px;
+}
+
+.lessons__leave-comment {
+    display: flex;
+    align-items: center;
+}
+
+.lessons__coments-avatar {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    object-fit: cover;
+    object-position: center center;
+    margin-right: 8px;
+}
+
+.lessons__comments-input-keeper {
+    position: relative;
+    width: 100%;
+}
+
+.lessons__comments-input {
+    width: 100%;
+}
+
+.lessons__send-comment-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 16px;
+    cursor: pointer
+}
+
+.lessons__comment {
+    margin-top: 24px;
+    display: flex;
+    align-items: flex-start;
+}
+
+.lessons__comment_reply {
+    width: calc(100% - 60px);
+    margin-left: 60px;
+}
+
+.lessons__comment > .lessons__coments-avatar {
+    margin-right: 12px;
+}
+
+.lessons__comment-author-keeper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.lessons__comment-author {
+    margin-right: 8px;
+}
+
+.lessons__comment-date {
+    font-weight: normal;
+    color: var(--grey);
+    line-height: 20px;
+}
+
+.lessons__comment-text {
+    font-size: 14px;
+    line-height: 24px;
+    margin-bottom: 4px;
+}
+
+.lessons__comment-actions {
+    display: flex;
+    align-items: center;
+}
+
+.lessons__comment-reply-button {
+    padding: 0;
+}
+
+.lessons__comment-reply-button {
+    font-weight: normal;
+    color: var(--light-grey);
+}
+
+.lessons__comment-text_link {
+    color: var(--primary);
+    word-break: break-all;
+}
+
+@media screen and (max-width: 1024px) {
+    .lessons__lesson-video {
+        margin: 16px 24px;
+    }
+
+    .lessons__comments {
+        margin: 0 16px 24px;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .lessons__lesson-keeper {
+        flex-wrap: wrap;
+    }
+
+    .lessons__lesson {
+        transition: width 0s;
+    }
+
+    .lessons__lessons-list.opened + .lessons__lesson {
+        width: calc(100% - 215px);
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .lessons__list-opener:not(.opened) > svg {
+        transform: scaleY(1) rotate(-90deg);
+    }
+
+    .lessons__list-opener.opened > svg {
+        transform: scaleY(-1) rotate(-90deg)
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .lessons__list-opener {
+        margin-left: 16px;
+    }
+
+    .lessons__lesson-video {
+        height: 215px;
+    }
+
+    .lessons__coments-avatar {
+        width: 36px;
+        height: 36px;
+    }
+
+    .lessons__comment-author-keeper {
+        flex-wrap: wrap;
+    }
+
+    .lessons__comment-text {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .lessons__comment_reply {
+        margin-left: 42px;
+    }
+}

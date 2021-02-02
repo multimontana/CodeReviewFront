@@ -1,0 +1,51 @@
+.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    padding: 12px 16px;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 24px;
+    background: transparent;
+}
+
+.button[disabled] {
+    cursor: default;
+}
+
+.button__arrow {
+    margin-left: 12px;
+}
+
+.button__clock {
+    margin-right: 8px;
+}
+
+.button_primary {
+    color: var(--white);
+    background: var(--primary);
+}
+
+.button_primary[disabled] {
+    background: var(--light-primary);
+    color: var(--primary);
+}
+
+.button_red {
+    background: rgba(235, 87, 87, 0.1);
+    color: var(--red);
+}
+
+.button_white {
+    background: var(--white);
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.04);
+}
+
+.button_light {
+    background: var(--light-primary);
+}

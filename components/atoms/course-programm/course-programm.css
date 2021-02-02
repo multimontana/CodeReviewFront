@@ -1,0 +1,17 @@
+.course-sec__plan-keeper {
+    /*display: none;*/
+}
+
+.course-sec__plan-item {
+    margin-top: 16px;
+}
+
+.course-sec__plan-item > .list-number {
+    margin-right: 16px;
+}
+
+.course-sec__plan-article {
+    font-size: 13px;
+    line-height: 24px;
+    color: var(--grey);
+}

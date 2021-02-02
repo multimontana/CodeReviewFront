@@ -1,0 +1,130 @@
+.my-profile__back-button {
+    padding: 0;
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.my-profile__back-icon {
+    margin-right: 8px;
+}
+
+.my-profile__title-keeper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.my-profile__edit-button>svg {
+    margin-left: 8px;
+}
+
+.my-profile__content {
+    display: flex;
+    align-items: flex-start;
+    padding: 24px 24px 104px;
+    margin-top: 24px;
+    background: var(--white);
+    border-radius: 16px;
+    box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.04);
+}
+
+.my-profile__avatar {
+    width: 128px;
+    height: 128px;
+    margin-right: 24px;
+    border-radius: 12px;
+    object-fit: cover;
+    object-position: center center
+}
+
+.my-profile__name-keeper {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 8px;
+}
+
+.my-profile__status {
+    color: var(--primary);
+    margin-left: 8px;
+}
+
+.my-profile__description {
+    width: 100%;
+}
+
+.my-profile__description span,
+.my-profile__description article {
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.my-profile__about {
+    margin: 32px 0;
+}
+
+.my-profile__subtitle {
+    color: var(--grey);
+}
+
+.my-profile__interests-keeper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.my-profile__interest {
+    padding: 8px 12px;
+    margin-right: 8px;
+    font-weight: normal;
+    margin-bottom: 16px;
+}
+
+.my-profile__interest:last-child {
+    margin-right: 0;
+}
+@media screen and (max-width: 768px) {
+
+    .my-profile__tabs {
+        overflow-x: scroll;
+        justify-content: initial;
+        max-width: 100%;
+        margin-right: -49px;
+    }
+
+    .my-profile__tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .my-profile__tab {
+        white-space: nowrap;
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+    .my-profile__active-course {
+        flex-wrap: wrap;
+    }
+
+    .my-profile__content {
+        flex-direction: column;
+        padding: 24px 16px;
+    }
+
+    .my-profile__avatar {
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .my-profile__edit-button h4 {
+        display: none;
+    }
+
+    .my-profile__edit-button svg {
+        margin-left: 0;
+    }
+}

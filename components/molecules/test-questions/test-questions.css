@@ -1,0 +1,116 @@
+.questions__page-keeper {
+    position: relative;
+    padding-top: 88px;
+    padding-bottom: 88px;
+    background: rgba(81, 129, 184, 0.03);
+}
+
+button.questions__close {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+    padding: 0;
+}
+
+.questions__topic {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--light-grey);
+    margin-bottom: 8px;
+}
+
+.questions__question {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 24px;
+}
+
+.questions__answer-label {
+    display: flex;
+    padding: 16px;
+    border-radius: 12px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 8px;
+}
+.questions__answer-label > input{
+  display: none;
+}
+.questions__answer-label:last-child {
+    margin-bottom: 0;
+}
+
+.questions__answer-label:hover,
+.questions__answer-label.active {
+    background: var(--white);
+}
+
+.questions__answer-input:checked ~ .questions__answer-input_custom .questions__answer-input-active {
+    transform: scale(1);
+}
+
+.questions__answer-input_custom {
+    margin: 4px 8px 4px 4px;
+    padding: 2px;
+    border: 2px solid var(--light-grey);
+    box-sizing: border-box;
+    border-radius: 16px;
+    min-width: 16px;
+    height: 16px;
+}
+
+.questions__answer-input-active {
+    background: var(--primary);
+    border-radius: 6px;
+    width: 100%;
+    height: 100%;
+    transform-origin: center center;
+    transform: scale(0);
+}
+
+.questions__answer-input {
+    width: 0;
+    height: 0;
+}
+.submit {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.submit__state {
+  display: flex;
+}
+
+.submit__state .button {
+  padding: 12px 24px;
+  margin-right: 16px;
+  border-radius: 8px;
+}
+
+.submit__button {
+  padding: 12px 24px;
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 432px) {
+  .submit {
+    justify-content: initial;
+    flex-direction: column;
+  }
+
+  .submit__button {
+    width: 100%;
+  }
+
+  .submit__state {
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  .submit__state .button:last-child {
+    margin-right: 0;
+  }
+}

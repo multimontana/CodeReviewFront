@@ -1,0 +1,14 @@
+.teacher__back-button {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    padding: 0
+}
+
+.teacher__back-icon {
+    margin-right: 8px;
+}
+
+.teacher__title {
+    text-align: left!important;
+}

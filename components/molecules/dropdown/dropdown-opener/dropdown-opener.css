@@ -1,0 +1,22 @@
+.header__account button {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+}
+
+button.header__profile-button {
+  width: 184px;
+  padding: 0;
+}
+
+@media screen and (max-width: 1280px) {
+  button.header__profile-button {
+    width: 86px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  button.header__profile-button {
+    width: 170px;
+  }
+}

@@ -1,0 +1,19 @@
+.teacher__course {
+    margin-bottom: 24px;
+}
+
+.teacher__course:last-child {
+    margin-bottom: 0;
+}
+
+.teacher__course-info-keeper {
+    display: flex;
+    align-items: center;
+}
+
+.teacher__course-icon {
+    margin-right: 16px;
+    min-width: 64px;
+    height: 64px;
+    border-radius: 16px;
+}

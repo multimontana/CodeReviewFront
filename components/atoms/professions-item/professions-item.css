@@ -1,0 +1,57 @@
+.professions__item {
+    background: var(--white);
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+    border-radius: 16px;
+    padding: 8px;
+    height: 248px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.professions__item-image {
+    width: 100%;
+    height: 180px;
+    background: var(--light-primary);
+    border-radius: 12px;
+    border: none;
+    overflow: hidden;
+}
+
+.professions__item-title {
+    margin: 16px 8px 8px 8px;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 28px;
+}
+
+@media screen and (max-width: 625px) {
+    .professions__item {
+        justify-content: center;
+        padding: 12px;
+    }
+
+    .professions__item-image {
+        height: 172px;
+    }
+
+    .professions__description {
+        text-align: center;
+    }
+}
+
+
+@media screen and (max-width: 520px) {
+    .professions__item {
+        justify-content: center;
+        padding: 12px;
+    }
+
+    .professions__item-image {
+        height: 172px;
+    }
+
+    .professions__description {
+        text-align: center;
+    }
+}

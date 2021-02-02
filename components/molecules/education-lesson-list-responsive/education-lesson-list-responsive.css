@@ -1,0 +1,13 @@
+.lessons__lessons-list_responsive {
+    display: none;
+}
+
+@media screen and (max-width: 768px) {
+    .lessons__lessons-list_responsive {
+        display: block;
+    }
+
+    .lessons__lessons-list_responsive.opened + hr {
+        display: none;
+    }
+}

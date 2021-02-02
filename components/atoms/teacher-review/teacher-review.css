@@ -1,0 +1,97 @@
+.teacher__reviews {
+    /*display: none;*/
+}
+
+.teacher__review {
+    margin-top: 24px;
+}
+
+.teacher__review-author {
+    display: flex;
+    align-items: center;
+}
+
+.teacher__review-author-image {
+    width: 32px;
+    height: 32px;
+    border-radius: 8px;
+    margin-right: 8px;
+    object-fit: cover;
+    object-position: center;
+}
+
+.teacher__review-content {
+    margin: 8px 0;
+}
+
+.teacher__review-rates {
+    display: flex;
+    align-items: center;
+}
+
+.teacher__review-rate-keeper {
+    display: flex;
+    align-content: inherit;
+    margin-right: 32px;
+}
+
+.teacher__review-rate-keeper:last-child {
+    margin-right: 0;
+}
+
+.teacher__review-target {
+    color: var(--grey);
+    font-weight: normal;
+    margin-right: 8px;
+}
+
+@media screen and (max-width: 768px) {
+    .teacher__block {
+        flex-direction: column;
+    }
+
+    .teacher__avatar {
+        margin-right: 0;
+        margin-bottom: 24px;
+    }
+
+    .teacher__tabs {
+        overflow-x: scroll;
+        justify-content: initial;
+        max-width: 100%;
+        margin-right: -49px;
+    }
+
+    .teacher__tabs::-webkit-scrollbar {
+        display: none;
+    }
+
+    .teacher__tab {
+        white-space: nowrap;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .teacher__name-keeper {
+        flex-direction: column;
+        align-items: initial;
+    }
+
+    .teacher__write-message {
+        margin-top: 24px;
+    }
+
+    .teacher__review-rates {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .teacher__review-rate-keeper {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+
+    .teacher__review-rate-keeper:last-child {
+        margin-bottom: 0;
+    }
+}

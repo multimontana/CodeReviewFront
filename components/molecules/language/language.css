@@ -1,0 +1,31 @@
+
+
+.header__language {
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  border-radius: 12px;
+  height: 48px;
+  margin-bottom: 4px;
+  cursor: pointer
+}
+
+.header__language:last-child {
+  margin-bottom: 0;
+}
+
+.header__language > img {
+  margin-right: 8px;
+  width: 24px;
+  height: 24px;
+}
+
+.header__language_active {
+  background: var(--primary);
+  color: var(--white);
+}
+
+.header__language:not(.header__language_active):hover {
+  background: var(--light-primary);
+  color: var(--primary);
+}

@@ -1,0 +1,186 @@
+
+.messages__users-list-keeper {
+    max-width: 281px;
+    width: 100%;
+    border-right: 1px solid var(--very-light-grey)
+}
+
+.messages__users-search-keeper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 16px;
+    border-bottom: 1px solid var(--very-light-grey);
+}
+
+.messsages__users-input-keeper {
+    display: flex;
+    align-items: center;
+}
+
+.messages__users-input {
+    background: transparent;
+    padding: 0;
+    border-radius: 0;
+    margin-left: 12px;
+    width: 100%;
+}
+
+.messages__add-user {
+    padding: 0;
+}
+
+.messages__users-button-keeper {
+    display: flex;
+    align-items: center;
+}
+
+.messages__users-button-keeper > .messages__open-responsive {
+    display: none;
+    margin-left: 8px;
+}
+
+.messages__user {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid var(--very-light-grey);
+    user-select: none;
+    cursor: pointer;
+}
+
+.messages__user:not(.messages__user_active):hover {
+    background: var(--light-primary);
+}
+
+.messages__user_active {
+    background: var(--primary);
+}
+
+.messages__user_active .messages__last {
+    opacity: .7;
+}
+
+.messages__user_active .messages__username,
+.messages__user_active .messages__last {
+    color: var(--white);
+}
+
+.messages__username-keeper {
+    width: 100%;
+    max-width: 187px;
+}
+
+.messages__user-image {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+    margin-right: 12px;
+    object-fit: cover;
+    object-position: center center
+}
+
+.messages__last-keeper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.messages__new-count {
+    min-width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 12px;
+    color: var(--white);
+    background: var(--primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.messages__last {
+    color: var(--grey);
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
+    text-overflow: ellipsis;
+}
+@media screen and (max-width: 768px) {
+    .messages__open-responsive {
+        display: flex;
+    }
+
+    .messages__users-list-keeper {
+        margin-left: -280px;
+    }
+
+    .messages__users-list-keeper.opened {
+        margin-left: 0;
+    }
+
+    .messages__container.opened {
+        margin-right: -280px;
+    }
+
+    .messages__container.opened .messages__content {
+        overflow: hidden;
+    }
+
+    .messages__open-responsive > svg.close {
+        display: none;
+    }
+
+    .messages__open-responsive.opened > svg:not(.close) {
+        display: none;
+    }
+
+    .messages__open-responsive.opened > svg.close {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .messages__content {
+        margin-top: 68px;
+    }
+
+    .messages__name-keeper {
+        flex-wrap: wrap;
+    }
+
+    .messages__status {
+        width: 100%;
+        margin-left: 36px;
+    }
+
+    .messages__message-content {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    .messages__container.opened {
+        margin-right: -100%;
+    }
+
+    .messages__users-list-keeper {
+        margin-left: -100%;
+        max-width: none;
+        width: 100%;
+    }
+
+    .messages__open-responsive.opened > svg.close {
+        visibility: hidden
+    }
+
+    .messages__users-button-keeper > .messages__open-responsive {
+        display: flex;
+        margin-right: 0;
+    }
+
+    .messages__users-button-keeper > .messages__open-responsive.opened > svg.close {
+        visibility: initial;
+    }
+}

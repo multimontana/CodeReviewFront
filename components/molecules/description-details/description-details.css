@@ -1,0 +1,141 @@
+.description-details {
+    background: var(--light-primary);
+    padding: 33px 240px 115px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.description-details > div {
+    width: 33%;
+}
+
+.description-details__duration-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.description-details__duration-item:last-child {
+    margin-bottom: 0;
+}
+
+.description-details__image-keeper {
+    width: 64px;
+    height: 64px;
+    background: var(--white);
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 14px;
+}
+
+.description-details__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.description-details__subtitle {
+    font-size: 14px;
+    line-height: 24px;
+    color: var(--grey)
+}
+
+.description-details__topics-keeper {
+    margin: 0 24px;
+}
+
+.description-details__topic-list {
+    margin-top: 8px;
+}
+
+.description-details__title {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.description-details__subtitle {
+    font-size: 14px;
+    line-height: 24px;
+    color: #6F7985;
+}
+
+.description-details__topic {
+    font-size: 14px;
+    line-height: 24px;
+    color: #6F7985;
+    margin-bottom: 8px;
+}
+
+.description-details__topic:last-child {
+    margin-bottom: 0;
+}
+
+.description-details__user {
+    display: flex;
+    align-items: center;
+    margin-top: 16px;
+}
+
+.description-details__user-avatar {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    margin-right: 16px;
+}
+
+.description-details__user-points {
+    font-size: 12px;
+    line-height: 24px;
+    color: var(--primary);
+}
+
+.description-details__total-points {
+    color: var(--grey);
+}
+
+@media screen and (max-width: 1280px) {
+    .description-details {
+        padding: 33px 120px 115px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .description-details {
+        padding: 33px 80px 115px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .description-details {
+        padding: 33px 24px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .description-details {
+        flex-direction: column;
+    }
+
+    .description-details__topics-keeper {
+        margin: 0;
+        margin-bottom: 24px;
+    }
+
+    .description-details > div {
+        width: 100%;
+        margin-right: 0!important;
+        margin-bottom: 24px;
+    }
+
+    .description__test-name-keeper {
+        margin-bottom: 24px;
+    }
+
+    .description__start-keeper {
+        flex-direction: column;
+    }
+}

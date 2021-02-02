@@ -1,0 +1,38 @@
+
+.my-profile__active-course {
+    margin-bottom: 24px;
+    display: flex;
+    align-items: center;
+}
+
+.my-profile__active-course:last-child {
+    margin-bottom: 0;
+}
+
+.my-profile__course-icon {
+    margin-right: 16px;
+    min-width: 64px;
+    height: 64px;
+    border-radius: 16px;
+}
+
+.my-profile__course-status {
+    font-weight: normal;
+    color: var(--grey)
+}
+
+.my-profile__course-actions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+}
+
+.my-profile__course-actions>.button_light {
+    padding: 12px;
+    margin-right: 8px;
+}
+
+.my-profile__course-info-keeper {
+    display: flex;
+    align-items: center;
+}

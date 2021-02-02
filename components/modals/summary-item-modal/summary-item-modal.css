@@ -1,0 +1,19 @@
+.summary__project-modal {
+  max-width: 458px;
+  width: 100%;
+}
+
+.summary__project-modal {
+  display: flex;
+  flex-direction: column;
+}
+
+.summary__project-modal-image {
+  width: 100%;
+  height: 600px;
+  margin-bottom: 16px;
+}
+
+.summary__project-modal-category {
+  color: var(--grey);
+}

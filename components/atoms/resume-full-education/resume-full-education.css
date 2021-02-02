@@ -1,0 +1,108 @@
+.summary__back-button {
+  padding: 0px;
+  margin-bottom: 16px;
+}
+
+.summary__back-icon {
+  margin-right: 8px;
+}
+
+.summary__title {
+  margin-bottom: 24px;
+}
+
+.summary__content {
+  background: var(--white);
+  box-shadow: 0px 1px 0px rgba(172, 183, 197, 0.2);
+  border-radius: 16px;
+}
+
+.summary__experience-title {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.summary__experience-location-keeper {
+  display: flex;
+  align-items: center;
+}
+
+.summary__experience-location {
+  color: var(--grey);
+  margin-right: 16px;
+}
+
+.summary__experience-website {
+  color: var(--primary);
+}
+
+.summary__experience-position-keeper {
+  margin: 16px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.summary__education-fakultet {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.summary__experience-position {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.summary__experience-date {
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--grey);
+}
+
+.summary__experience-job {
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.summary__experience-action-keeper {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.summary__experience-action {
+  margin-right: 16px;
+  font-size: 14px;
+  line-height: 24px;
+  color: var(--light-grey);
+}
+
+.summary__experience-divider {
+  border-color: var(--very-light-grey);
+}
+
+.summary__experience-button {
+  border-radius: 8px;
+}
+
+.summary__form-group_middle {
+  max-width: 550px;
+}
+
+.summary__input-text-keeper {
+  display: flex;
+  align-items: flex-start;
+}
+
+.summary__input-text-keeper > * {
+  width: calc(33% + 28px);
+  margin-right: 16px;
+}
+
+.summary__input-text {
+  font-size: 12px;
+  line-height: 24px;
+  color: var(--grey);
+}
